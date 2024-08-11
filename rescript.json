@@ -1,0 +1,29 @@
+{
+  "name": "test-to-do-list",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "esmodule",
+      "in-source": true
+    }
+  ],
+  "suffix": ".res.mjs",
+  "bs-dependencies": [
+    "@rescript/core",
+    "@rescript/react",
+    "rescript-struct"
+  ],
+  "bsc-flags": [
+    "-open RescriptCore",
+    "-open RescriptStruct"
+  ],
+  "jsx": {
+    "version": 4
+  },
+  "reason": { "react-jsx": 3 }
+}
